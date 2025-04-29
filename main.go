@@ -5,9 +5,9 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/yourusername/jsondb/api"
-	"github.com/yourusername/jsondb/config"
-	"github.com/yourusername/jsondb/storage"
+	"github.com/urusofam/jsondb/api"
+	"github.com/urusofam/jsondb/config"
+	"github.com/urusofam/jsondb/storage"
 )
 
 func main() {
