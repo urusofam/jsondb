@@ -3,7 +3,7 @@ package index
 import (
 	"errors"
 
-	"github.com/yourusername/jsondb/storage"
+	"github.com/urusofam/jsondb/storage"
 )
 
 // Index определяет интерфейс для индексирования
