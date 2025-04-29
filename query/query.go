@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/yourusername/jsondb/storage"
+	"github.com/urusofam/jsondb/storage"
 )
 
 // Query представляет запрос к базе данных
