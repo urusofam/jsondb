@@ -14,7 +14,7 @@ JSONDB - простая и эффективная система управле�
 ## Установка
 
 ```bash
-go get github.com/yourusername/jsondb
+go get github.com/urusofam/jsondb
 ```
 
 ## Структура проекта
