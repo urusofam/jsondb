@@ -221,37 +221,6 @@ JSONDB предоставляет набор функций для работы 
 - `MonthsBetween(time1, time2)` - количество месяцев между датами
 - `YearsBetween(time1, time2)` - количество лет между датами
 
-## Расширение функциональности
-
-### Добавление нового типа хранения
-
-Для добавления нового типа хранения необходимо реализовать интерфейс `storage.Storage`:
-
-```go
-type Storage interface {
-    Save(doc Document) error
-    Get(id string) (Document, error)
-    Delete(id string) error
-    List() ([]Document, error)
-}
-```
-
-### Добавление нового типа индекса
-
-Для добавления нового типа индекса необходимо реализовать интерфейс `index.Index`:
-
-```go
-type Index interface {
-    Add(doc storage.Document) error
-    Remove(id string) error
-    Search(field string, value interface{}) ([]string, error)
-}
-```
-
-### Расширение языка запросов
-
-Для расширения языка запросов можно модифицировать `query.QueryParser` и `query.QueryExecutor`.
-
 ## Ограничения
 
 - Отсутствие поддержки транзакций
